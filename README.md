@@ -1,3 +1,14 @@
+# TimeHat
+
+![2025-10-01T20_09_28 539Z-thumbnail_IMG_3502](https://github.com/user-attachments/assets/57f644cd-3265-4f4c-bcdc-205dd5fd6c7b)
+
+The Raspberry Pi 5 PCIe HAT is designed to bring precision timing and advanced network functionality to the Raspberry Pi 5 platform. Leveraging the PCIe interface via an FPC connection, this HAT expands the Pi’s capabilities by integrating a high-performance I226 Ethernet NIC, precise timing inputs and outputs via SMA connectors, and a GNSS module slot for global time synchronization. It’s a powerful tool for building small form-factor PTP (Precision Time Protocol) clients, ideal for time-sensitive networking applications.
+
+## Order
+
+Order from the Tindie Page:
+https://www.tindie.com/products/timeappliances/timehat-i226-nic-with-pps-inout-for-rpi5/
+
 # Intel I225 PPS Input Patch (DKMS-based igc driver replacement)
 
 This guide shows how to install a patched version of the `igc` driver (used by Intel I225/I226 NICs) to support PPS input. It uses DKMS for rebuilds and ensures the custom driver loads at boot on Raspberry Pi OS 64-bit.
