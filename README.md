@@ -38,7 +38,7 @@ sudo cp testptp /usr/bin/
 Depending on your RPI5 kernel, use 6_6 file for 6.6 (current stable RPI release as of 4/15/2025) or 6_12 file for 6.12 kernel. Use uname -a to get kernel version.
 ```bash
 cd ~
-wget https://github.com/Time-Appliances-Project/Products/raw/refs/heads/main/TimeHAT/intel-igc-ppsfix_rpi5_6_6.zip
+wget https://github.com/Time-Appliances-Project/TimeHAT/raw/refs/heads/main/intel-igc-ppsfix_rpi5_6_6.zip
 unzip intel-igc-ppsfix_rpi5_6_6.zip
 cd intel-igc-ppsfix
 ```
