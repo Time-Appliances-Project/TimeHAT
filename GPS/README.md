@@ -63,7 +63,7 @@ sudo apt install gpsd gpsd-clients socat linuxptp
 #    (for example, using /dev/ttyAMA0 and -n so it starts polling immediately).
 #    Edit /etc/default/gpsd later if your device or options differ.
 sudo wget -O /etc/default/gpsd \
-  https://raw.githubusercontent.com/Time-Appliances-Project/Products/refs/heads/main/TimeHAT/GPS/gpsd
+  https://github.com/Time-Appliances-Project/TimeHAT/raw/refs/heads/main/GPS/gpsd
 ```
 
 # 3) Install gpspipe + socat bridge service
@@ -73,7 +73,7 @@ sudo wget -O /etc/default/gpsd \
 #      - uses socat to create /dev/gps-ts2phc
 #      - feeds NMEA from gpsd into /dev/gps-ts2phc for ts2phc to consume
 sudo wget -O /etc/systemd/system/gpspipe-socat.service \
-  https://raw.githubusercontent.com/Time-Appliances-Project/Products/refs/heads/main/TimeHAT/GPS/gpspipe-socat.service
+  https://github.com/Time-Appliances-Project/TimeHAT/raw/refs/heads/main/GPS/gpspipe-socat.service
 ```
 
 # 4) Install ts2phc service
@@ -83,7 +83,7 @@ sudo wget -O /etc/systemd/system/gpspipe-socat.service \
 #      - reads NMEA from /dev/gps-ts2phc
 #      - uses PPS on eth1 to discipline the NIC’s PHC
 sudo wget -O /etc/systemd/system/ts2phc-gps.service \
-  https://raw.githubusercontent.com/Time-Appliances-Project/Products/refs/heads/main/TimeHAT/GPS/ts2phc-gps.service
+  https://github.com/Time-Appliances-Project/TimeHAT/raw/refs/heads/main/GPS/ts2phc-gps.service
 ```
 
 # 5) Install ts2phc configuration
@@ -95,7 +95,7 @@ sudo wget -O /etc/systemd/system/ts2phc-gps.service \
 sudo mkdir -p /etc/linuxptp
 
 sudo wget -O /etc/linuxptp/ts2phc-gps.cfg \
-  https://raw.githubusercontent.com/Time-Appliances-Project/Products/refs/heads/main/TimeHAT/GPS/ts2phc-gps.cfg
+  https://github.com/Time-Appliances-Project/TimeHAT/raw/refs/heads/main/GPS/ts2phc-gps.cfg
 ```
 
 # 6) Reload systemd units
